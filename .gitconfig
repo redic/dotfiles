@@ -1,9 +1,11 @@
 [user]
-	name = Vladimir Rudnyh
-	email = rudnyh@corp.mail.ru
+	name = Anton Redozubov
+	email = anton@redozubov.ru
 [color]
 	ui = true
 [core]
+	autocrlf = false
+	safecrlf = false
 	quotepath = false
 	editor = vim
 [push]
@@ -14,3 +16,11 @@
 	prompt = false
 [diff]
 	tool = Kaleidoscope
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
