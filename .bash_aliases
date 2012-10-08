@@ -13,6 +13,7 @@ alias gtree='git log --graph --full-history --all --color --pretty=format:"%x1b[
 # alias .='pwd'
 alias ..='cd ..'
 alias ...='cd ../..'
+alias godev='cd ~/Dropbox/Dev/'
 
 # mkdir
 md() { mkdir -p "$@" && cd "$@"; }
