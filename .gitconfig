@@ -26,8 +26,21 @@
 [alias]
 	co = checkout
 	ci = commit
-	st = status
+	st = status -sb
 	br = branch
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	type = cat-file -t
 	dump = cat-file -p
+	up = !(git add . && git stash && git pull --rebase >&2) | grep -v \"No local changes to save\" && git stash pop
+	pr = pull --rebase
+	in = "!git remote update -p; git log ..@{u}"
+	out = log @{u}..
+	addremove = !git add . && git ls-files --deleted | xargs --no-run-if-empty git rm
+	unstage = reset HEAD --
+	backup = !file=../`git describe`.tar && echo \"Creating `readlink -f $file`\" && tar cf $file .
+	bra = branch -a
+	chp = cherry-pick
+	bl = blame -b -w
+	cia = commit --amend
+	lg = log --pretty=format:'%h was %an, %ar, message: %s' --graph
+	who = shortlog -s --

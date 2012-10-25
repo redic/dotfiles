@@ -195,3 +195,5 @@ fi
 # this is for delete words by ^W
 tty -s && stty werase ^- 2>/dev/null
 
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
