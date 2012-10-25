@@ -44,6 +44,8 @@ set background=dark  " we want dark and scary interface
 set tabstop=4
 set shiftwidth=4
 set smarttab
+set smartindent
+set expandtab
 set softtabstop=4
 set autoindent
 

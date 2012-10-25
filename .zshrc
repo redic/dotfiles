@@ -197,3 +197,5 @@ if [ "$TERM" != dumb ] && [ -n GRC ]; then
 	alias traceroute='colourify /usr/sbin/traceroute'
 fi
 
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
