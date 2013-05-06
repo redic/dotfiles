@@ -11,9 +11,11 @@ unset DYLD_LIBRARY_PATH
 # add local bin path
 PATH=$HOME/.bin:$PATH
 PATH=/usr/local/bin:$PATH
+[ -d /opt/pear/bin ] &&PATH=/opt/pear/bin:$PATH
 PATH=/usr/local/sbin:$PATH
 [ -d /usr/local/mysql/bin ] && PATH=/usr/local/mysql/bin:$PATH
 [ -d /usr/local/share/npm/bin ] && PATH=/usr/local/share/npm/bin:$PATH
+[ -d /bin ] && PATH=~/bin:$PATH
 
 # don't put duplicate lines in the history
 export HISTCONTROL=ignoreboth:erasedups
