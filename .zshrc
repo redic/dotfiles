@@ -220,3 +220,5 @@ alias :q='exit'
 #    alias ping='colourify ping'
 #    alias traceroute='colourify /usr/sbin/traceroute'
 #fi
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
