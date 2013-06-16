@@ -2,6 +2,8 @@
 alias ls='ls -G'
 alias ll='ls -l'
 alias la='ls -lA'
+alias lf="ls -l | egrep -v '^d'"
+alias ldir="ls -l | egrep '^d'"
 
 # tree aliaces
 alias tree='tree --dirsfirst'

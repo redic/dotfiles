@@ -11,11 +11,19 @@ unset DYLD_LIBRARY_PATH
 # add local bin path
 PATH=$HOME/.bin:$PATH
 PATH=/usr/local/bin:$PATH
-[ -d /opt/pear/bin ] &&PATH=/opt/pear/bin:$PATH
+[ -d /opt/pear/bin ] && PATH=/opt/pear/bin:$PATH
 PATH=/usr/local/sbin:$PATH
 [ -d /usr/local/mysql/bin ] && PATH=/usr/local/mysql/bin:$PATH
 [ -d /usr/local/share/npm/bin ] && PATH=/usr/local/share/npm/bin:$PATH
 [ -d /bin ] && PATH=~/bin:$PATH
+[ -d /opt/pfff ] && PATH=/opt/pfff:$PATH
+
+[ -d /usr/local/opt/cairo/lib/pkgconfig ] && PKG_CONFIG_PATH=/usr/local/opt/cairo/lib/pkgconfig:$PKG_CONFIG_PATH
+[ -d /usr/local/opt/pixman/lib/pkgconfig ] && PKG_CONFIG_PATH=/usr/local/opt/pixman/lib/pkgconfig:$PKG_CONFIG_PATH
+[ -d /usr/local/opt/fontconfig/lib/pkgconfig ] && PKG_CONFIG_PATH=/usr/local/opt/fontconfig/lib/pkgconfig:$PKG_CONFIG_PATH
+[ -d /usr/local/opt/freetype/lib/pkgconfig ] && PKG_CONFIG_PATH=/usr/local/opt/freetype/lib/pkgconfig:$PKG_CONFIG_PATH
+[ -d /usr/local/opt/libpng/lib/pkgconfig ] && PKG_CONFIG_PATH=/usr/local/opt/libpng/lib/pkgconfig:$PKG_CONFIG_PATH
+[ -d /usr/X11/lib/pkgconfig ] && PKG_CONFIG_PATH=/usr/X11/lib/pkgconfig:$PKG_CONFIG_PATH
 
 # don't put duplicate lines in the history
 export HISTCONTROL=ignoreboth:erasedups
